@@ -1,0 +1,220 @@
+												
+												
+												
+												
+TC ID	Test case name	Input length type	Input	Expected output	Actual output	Status	Accuracy justification/ Description of issue type	What is covered by the test				
+Pos_Fun_0001	Basic daily greeting	S	Oyaata kohomadha dhaen ?	ඔයාට කොහොමද දැන් ?	ඔයාට කොහොමද දැන් ?	Pass	· clean input with normal spelling and spacing.	· Daily language usage				
+							·verifying correct Singlish to English conversion	·Simple sentence				
+								· M (31–299 characters)				
+												
+Pos_Fun_0002	Simple daily usage sentence	S	Mama dhaen inne gedhara .	මම දැන් ඉන්නේ ගෙදර .	මම දැන් ඉන්නේ ගෙදර .	Pass	·  clean input with normal spelling and spacing	·   Daily language usage 				
+							· verifying correct Singlish to English conversion	·   Simple sentence				
+								·  S (≤30 characters)				
+												
+Pos_Fun_0003	Two activities connected with typos	M	Mama gedhara yanvaa dhaen moko mata podi prshnayak thiyenvaa !	මම ගෙදර යන්වා දැන් මොකො මට පොඩි ප්‍රශ්නයක් තියෙන්වා !	මම ගෙදර යන්වා දැන් මොකො මට පොඩි ප්‍රශ්නයක් තියෙන්වා !	Pass	· clean input with normal spelling and spacing	·   Greeting / request / response				
+							· Sinhala spelling and word segmentation are correct.	·   Interrogative (question)				
+							· The quatation  mark remains correctly placed. 	·   · M (31–299 characters)				
+								·   Accuracy validation				
+Pos_Fun_0004	Compound sentence with technical English terms and punctuation	M	Mama laptop eka open   kalaa, report eka upload karannam.	මම laptop එක open   කලා, report එක upload කරන්නම්.	මම laptop එක open   කලා, report එක upload කරන්නම්.	Pass	·Real-time output update behavior	·   Mixed Singlish + English				
+							· Output updates correctly as the user types the full sentence.	·   Compound sentence				
+							· No UI lag or freezing observed for short input.	·   M (31–299 characters)				
+												
+Pos_Fun_0005	Simple daily usage sentence	S	mama enakota raee vevi godak	මම එනකොට රෑ වෙවි ගොඩක්	මම එනකොට රෑ වෙවි ගොඩක්	Pass	· clean and grammatically correct daily usage sentence with normal spelling	·   Daily language usage				
+							·verifying accurate Singlish to English conversion	· Simple sentence				
+								·S (≤30 characters)   				
+												
+Pos_Fun_0006	Short cause effect phrase pattern sentence	S	vaessa nisaa mama innee gedhara	වැස්ස නිසා මම ඉන්නේ ගෙදර	වැස්ස නිසා මම ඉන්නේ ගෙදර	Pass	· clean and correctly structured daily usage cause–effect sentence	·  Daily language usage				
+							· verifying accurate Singlish to English conversion for short input.	· Simple sentence				
+								·  S (≤30 characters)				
+							.					
+Pos_Fun_0007	Polite question format	L	mama adha udhee ofis ekata aevillaa iimeel tika balalaa riplayi kaLaa, sistam eka apdeet kaLaa, deetaabees ekee rekoods tika chek kaLaa, tiim ekka diskaShan ekak thiyalaa iShuu tika soolv kaLaa, ripoorts hadhalaa maeneejarta yaevvaa, ekayi mata udheekaeema araganna amathaka unee dhaen kaeevata kamak naedhdha?	මම අද උදේ ඔෆිස් එකට ඇවිල්ලා ඊමේල් ටික බලලා රිප්ලයි කළා, සිස්ටම් එක අප්ඩේට් කළා, ඩේටාබේස් එකේ රෙකෝඩ්ස් ටික චෙක් කළා, ටීම් එක්ක ඩිස්කෂන් එකක් තියලා ඉෂූ ටික සෝල්ව් කළා, රිපෝර්ට්ස් හදලා මැනේජර්ට යැව්වා, එකයි මට උදේකෑම අරගන්න අමතක උනේ දැන් කෑවට කමක් නැද්ද?	මම අද උදේ ඔෆිස් එකට ඇවිල්ලා ඊමේල් ටික බලලා රිප්ලයි කළා, සිස්ටම් එක අප්ඩේට් කළා, ඩේටාබේස් එකේ රෙකෝඩ්ස් ටික චෙක් කළා, ටීම් එක්ක ඩිස්කෂන් එකක් තියලා ඉෂූ ටික සෝල්ව් කළා, රිපෝර්ට්ස් හදලා මැනේජර්ට යැව්වා, එකයි මට උදේකෑම අරගන්න අමතක උනේ දැන් කෑවට කමක් නැද්ද?	Pass	Accuracy validation – long mixed Singlish + English paragraph describing multiple sequential actions	· Input Type/Domain: Mixed Singlish + English				
+							verifies consistent and complete conversion accuracy for extended text while preserving overall meaning	· Input Length Type: L (≥300 characters)				
+								·  Sentence/Grammar Focus: Interrogative (question) 				
+												
+Pos_Fun_0008	Present + Command style	S	vaeda ikmanata karanna !	වැඩ ඉක්මනට කරන්න !	වැඩ ඉක්මනට කරන්න !	Pass	Accuracy validation – short command-style instruction with clear wording	·   Input Type/Domain: Daily language usage				
+							ensures the system correctly converts concise imperative expressions	·   Sentence/Grammar Focus: Imperative (command)				
+								·   Input Length Type: S (≤30 characters)				
+								·   				
+Pos_Fun_0009	Future tense action	M	heta assignment eka email eken sabmit karanna yannee.	හෙට assignment එක email එකෙන් සබ්මිට් කරන්න යන්නේ.	හෙට assignment එක email එකෙන් සබ්මිට් කරන්න යන්නේ.	Pass	Accuracy validation – future tense action statement containing English technical terms	·   Input Type/Domain: Mixed Singlish + English				
+							 verifies accurate handling of tense and mixed-language vocabulary during conversion	Sentence/Grammar Focus: Future tense				
+								·   Input Length Type: M (31–299 characters)				
+								·   				
+Pos_Fun_0010	Plural pronoun usage	M	saththu tika balan aethi gedhara yanna	සත්තු ටික බලන් ඇති ගෙදර යන්න	සත්තු ටික බලන් ඇති ගෙදර යන්න	Pass	Accuracy validation – sentence referencing multiple items with plural usage	·   Input Type/Domain: Daily language usage				
+							checks correct grammatical agreement and natural phrasing during translation	Sentence/Grammar Focus: Plural form				
+								·   Input Length Type: M (31–299 characters)				
+								·   				
+Pos_Fun_0011	Short phrase pattern sentence	S	Eka hariyata balalaa kiyanna	එක හරියට බලලා කියන්න	එක හරියට බලලා කියන්න	Pass	Accuracy validation – short phrase pattern request with simple structure	·   Input Type/Domain: Daily language usage				
+							verifies reliable conversion of brief everyday instructions	·   Sentence/Grammar Focus: Imperative (command)				
+								·   nput Length Type: S (≤30 characters)				
+								·   				
+Pos_Fun_0012	Short phrase pattern sentence	M	Api tika tika igena gannawa ee hindha thama hariyata dhanne nae	අපි ටික ටික ඉගෙන ගන්නව ඒ හින්ද තම හරියට දන්නෙ නැ	අපි ටික ටික ඉගෙන ගන්නව ඒ හින්ද තම හරියට දන්නෙ නැ	Pass	Accuracy validation – medium-length explanatory sentence showing gradual action and reasoning	·   Input Type/Domain: Daily language usage				
+							ensures correct conversion of connected ideas while preserving meaning	·   Sentence/Grammar Focus: Complex sentence				
+								·    Input Length Type: M (31–299 characters)				
+								·   				
+Pos_Fun_0013	Polite request with date format	M	Report eka 12/07/2026 ta kalin submit karanna puluvandha ?	Report එක 12/07/2026 ට කලින් submit කරන්න පුලුවන්ද ?	Report එක 12/07/2026 ට කලින් submit කරන්න පුලුවන්ද ?	Pass	Accuracy validation – polite request containing a specific date and punctuation	·   Input Type/Domain: Punctuation / numbers				
+							verifies accurate handling of numeric formats and formal question structure	Sentence/Grammar Focus: Interrogative (question)				
+								·   Input Length Type: M (31–299 characters				
+								·   				
+Pos_Fun_0014	Informal slang phrase	S	man gedhara hari ban, ennam	හරි බන්, එන්නම්	හරි බන්, එන්නම්	Pass	Accuracy validation – short informal slang phrase with conversational tone	·   Input Type/Domain: Slang / informal language				
+							checks natural and meaningful conversion of casual daily speech	·   Sentence/Grammar Focus: Simple sentence				
+								·   Input Length Type: S (≤30 characters)				
+								·   				
+Pos_Fun_0015	Informal slang phrase	M	mata salli naee ban passee dhennam	මට සල්ලි නෑ බන් පස්සේ දෙන්නම්	මට සල්ලි නෑ බන් පස්සේ දෙන්නම්	Pass	Accuracy validation – medium-length informal sentence expressing a future promise with slang vocabulary	·   Input Type/Domain: Slang / informal language				
+							verifies correct interpretation of casual expressions during conversion 	·    Sentence/Grammar Focus: Future tense				
+								·    Input Length Type: M (31–299 characters)				
+								·   				
+Pos_Fun_0016	Colloquial expression	M	ehema karanna epaa harita balalaa karanna	එහෙම කරන්න එපා හරිට බලලා කරන්න	එහෙම කරන්න එපා හරිට බලලා කරන්න	Pass	Accuracy validation – advisory sentence combining prohibition and instruction	·   Input Type/Domain: Daily language usage				
+							ensures proper handling of everyday conversational commands and warnings	·   Sentence/Grammar Focus: Imperative (command)				
+								Input Length Type: M (31–299 characters)				
+								·   				
+Pos_Fun_0017	Colloquial expression	M	api tikak kalpanaa karalaa passee thiiraNayak gannamu	අපි ටිකක් කල්පනා කරලා පස්සේ තීරණයක් ගන්නමු	අපි ටිකක් කල්පනා කරලා පස්සේ තීරණයක් ගන්නමු	Pass	Accuracy validation – medium-length colloquial sentence expressing a decision-making action	·  Input Type/Domain: Daily language usage				
+							 verifies accurate conversion of natural conversational Singlish while preserving meaning and structure	·   Sentence/Grammar Focus: Compound sentence				
+								·  Input Length Type: M (31–299 characters)				
+								·   Input Type/Domain: Daily language usage 				
+Pos_Fun_0018	Colloquial expression	S	tikak innakoo	ටිකක් ඉන්නකෝ	ටිකක් ඉන්නකෝ	Pass	Accuracy validation – short polite colloquial request with correct spelling	·   Sentence/Grammar Focus: Imperative (command)				
+							checks reliable conversion of brief everyday expressions	·  Input Length Type: S (≤30 character				
+								·   				
+								·   				
+Pos_Fun_0019	Colloquial past tense expression	S	api tikak kalpanaa karaa	අපි ටිකක් කල්පනා කරා	අපි ටිකක් කල්පනා කරා	Pass	Accuracy validation – concise past tense statement with simple wording	·   Input Type/Domain: Daily language usage				
+							verifies correct tense handling and grammatical accuracy during conversion	·   Sentence/Grammar Focus: Past tense				
+								·   Input Length Type: S (≤30 characters)				
+								·   				
+Pos_Fun_0020	Abbreviation in sentence	S	Info ekak evanna	Info එකක් එවන්න	Info එකක් එවන්න	Pass	Accuracy validation – sentence includes a common English abbreviation within Singlish text	·   Input Type/Domain: Mixed Singlish + English				
+							ensures the system properly processes mixed-language terms without affecting translation quality 	·    Sentence/Grammar Focus: Imperative (command)				
+								·   Input Length Type: S (≤30 characters)				
+								·   				
+Pos_Fun_0021	Abbreviation in sentence with time	S	2 hrs idhalaa enna	2 hrs ඉදලා එන්න	2 hrs ඉදලා එන්න	Pass	Accuracy validation – short request containing numeric time information and abbreviations	·   Input Type/Domain: Punctuation / numbers				
+							verifies correct handling of numbers and units during conversion	 Sentence/Grammar Focus: Imperative (command)				
+								·   Input Length Type: S (≤30 characters)				
+								·   				
+Pos_Fun_0022	Complex slang statement	M	machQQ mama leet unaa ban traefik ekak thibba nisaa	මචං මම ලේට් උනා බන් ට්‍රැෆික් එකක් තිබ්බ නිසා	මචං මම ලේට් උනා බන් ට්‍රැෆික් එකක් තිබ්බ නිසා	Pass	Accuracy validation – medium-length informal slang sentence with multiple ideas and borrowed English words	Input Type/Domain: Slang / informal language				
+							checks consistent and meaningful conversion of complex conversational language	Sentence/Grammar Focus: Complex sentence				
+								·   Input Length Type: M (31–299 characters)				
+								·   				
+Pos_Fun_0023	Complex slang statement	S	1 msg ekak dhenna	1 ම්ස්ග් එකක් දෙන්න	1 ම්ස්ග් එකක් දෙන්න	Pass	Accuracy validation – short mixed numeric and abbreviated phrase	·   Input Type/Domain: Punctuation / numbers				
+							verifies accurate processing of compact messages commonly used in casual communication	 Sentence/Grammar Focus: Imperative (command)				
+								·   Input Length Type: S (≤30 characters)				
+								·   				
+Pos_Fun_0024	Complex slang statement	S	kamak naee ithin	කමක් නෑ ඉතින්	කමක් නෑ ඉතින්	Pass	Accuracy validation – brief informal response with natural conversational tone	·   Input Type/Domain: Slang / informal language				
+							ensures correct semantic interpretation and conversion of everyday speech	·   Sentence/Grammar Focus: Simple sentence				
+								·   Input Length Type: S (≤30 characters)				
+								·   				
+Pos_Fun_0025	Complex slang statement	S	anee mandhaa ban meeka karanna baee	අනේ මන්දා බන් මේක කරන්න බෑ	අනේ මන්දා බන් මේක කරන්න බෑ	Pass	Accuracy validation – short expressive slang sentence containing negation and emotion	·   Input Type/Domain: Slang / informal language				
+							verifies that the system accurately preserves tone and meaning in informal contexts	 Sentence/Grammar Focus: Negation (negative form)				
+								·   Input Length Type: S (≤30 characters)				
+								·   				
+Pos_Fun_0026	Simple slang statement	S	adoo ban !!!!!!	අඩෝ බන් !!!!!!	අඩෝ බන් !!!!!!	Pass	Accuracy validation – short informal slang expression with repeated punctuation	·  Input Type/Domain: Slang / informal language				
+							verifies correct conversion of casual conversational Singlish without altering tone or emphasis	·    Sentence/Grammar Focus: Simple sentence				
+								·  Input Length Type: S (≤30 characters)				
+								·   				
+Pos_Fun_0027	Compound informal slang statement	M	hari ban poddak idapan, mama dhavasama bisi unaa	හරි බන් පොඩ්ඩක් ඉඩපන්, මම දවසම බිසි උනා	හරි බන් පොඩ්ඩක් ඉඩපන්, මම දවසම බිසි උනා	Pass	Accuracy validation – compound informal slang sentence with natural conversational flow	·  Input Type/Domain: Slang / informal language				
+							ensures accurate translation of multi-clause daily speech containing colloquial terms	·   Sentence/Grammar Focus: Compound sentence				
+								·  Input Length Type: M (31–299 characters)				
+								·   				
+Pos_Fun_0028	Short phrase pattern sentence	M	api yamu ban passee balamu mokadha vennee kiyalaa	අපි යමු බන් පස්සේ බලමු මොකද වෙන්නේ කියලා	අපි යමු බන් පස්සේ බලමු මොකද වෙන්නේ කියලා	Pass	Accuracy validation – medium-length phrase pattern sentence using sequential actions	·  Input Type/Domain: Daily language usage				
+							 verifies that the system correctly preserves meaning and word order during conversion	·  Sentence/Grammar Focus: Compound sentence				
+								·  Input Length Type: M (31–299 characters)				
+								·   				
+Pos_Fun_0029	Short phrase pattern sentence	M	machn mama leet unaa ban traefik ekak thibba nisaa	මච්න් මම ලේට් උනා බන් ට්‍රැෆික් එකක් තිබ්බ නිසා	මච්න් මම ලේට් උනා බන් ට්‍රැෆික් එකක් තිබ්බ නිසා	Pass	Accuracy validation – mixed slang and borrowed English terms within a cause–effect statement	·  Input Type/Domain: Mixed Singlish + English				
+							checks reliable handling of informal vocabulary and embedded English words during translation	·   Sentence/Grammar Focus: Complex sentence				
+								·  Input Length Type: M (31–299 characters				
+								·   				
+Pos_UI_0001	Real-time negation typing update	M	"M
+    Ma
+    Mama
+    Mama enna
+    Mama enna ne`"	"ම
+    ම
+    මම
+    මම එන්න
+    මම එන්න නෑ"	"ම
+    ම
+    මම
+    මම එන්න
+    මම එන්න නෑ"	Pass	Real-time output update behavior – verifies incremental Sinhala conversion as each character or word is typed and confirms smooth dynamic updates without delay or rendering issues.	·  Input Type/Domain: Formatting (spaces / line breaks / paragraph)				
+								·    Sentence/Grammar Focus: Negation (negative form)				
+								·  Input Length Type: M (31–299 characters)				
+								·   				
+Pos_UI_0002	Real-time update with mixed punctuation	M	"`E
+    E
+    Ena
+    Enna
+    Enna ikmanata!`"	"එ
+    එ
+    එන්
+    එන්න
+    එන්න ඉක්මනට!"	"එ
+    එ
+    එන්
+    එන්න
+    එන්න ඉක්මනට!"	Pass	Real-time output update behavior – tests live conversion with mixed punctuation and step-by-step typing; ensures special characters and exclamation marks are preserved while updating output instantly.	·  Input Type/Domain: Punctuation / numbers | Sentence/				
+								·  Grammar Focus: Imperative (command)				
+								·  Input Length Type: M (31–299 characters)				
+								·   				
+Neg_Fun_0001	Casual imperative check request	M	ow oyaa haridha balannako ikmanata	ඔව් ඔයා හරිද බලන්නකො ඉක්මනට	ow ඔයා හරිද බලන්නකො ඉක්මනට	Fail	Robustness validation – casual imperative request with informal wording and mixed transliteration	·  Input Type/Domain: Slang / informal language				
+							verifies how the system handles conversational Singlish commands and checks behavior when conversion accuracy is inconsistent.	·  Sentence/Grammar Focus: Imperative (command)				
+								·  Input Length Type: M (31–299 characters)				
+								·   				
+Neg_Fun_0002	Simple thank you response	S	Bohoma istuti oyage help ekata	බොහෝම ඉස්තුති ඔයාගේ හෙල්ප් එකට	ඹොහොම ඉස්ටුටි ඔයගෙ help එකට	Fail	Robustness validation – short gratitude response containing phonetic spelling variations	·  Input Type/Domain: Daily language usage				
+							verifies tolerance to informal or non-standard spellings during conversion.	·  Sentence/Grammar Focus: Simple sentence				
+								·  Input Length Type: S (≤30 characters)				
+								·   				
+Neg_Fun_0003	Real time output update while typing	M	Mama gedara enawDa Oyaa enawada eNawda. 	මම ගෙදර යනවා ඔයා\n එනවාද	 මම ගෙඩර එනwඪ ඔයා එනwඅඩ එණwඩ.	Fail	Real-time output update behavior – verifies system response while typing continuously and checks whether dynamic conversion remains stable without corrupted or partial output.	·  Input Type/Domain: Formatting (spaces / line breaks / paragraph)				
+								·  Sentence/Grammar Focus: Interrogative (question)				
+								·  Input Length Type: M (31–299 characters)				
+								·   				
+Neg_Fun_0004	Past tense action	M	mama iiyee ofis ekata yadhdhi wetunaa !!!!	මම ඊයේ ඔෆිස් එකට යද්දි වැටුනා !!!!	මම ඊයේ ඔෆිස් එකට යද්දි wඑටුනා !!!!	Fail	Robustness validation – past tense sentence with extra punctuation and informal typing patterns	·  Input Type/Domain: Typographical error handling				
+							evaluates how the system processes noisy input and maintains correct tense conversion.	·  Sentence/Grammar Focus: Past tense				
+								·  Input Length Type: M (31–299 characters)				
+								·   				
+Neg_Fun_0005	Plural pronoun usage	M	mama poth tika aran eddi oyala iwara karala thiyenna onii	මම පොත් ටික අරන් එද්දි ඔයාලා ඉවර කරලා තියෙන්න ඕනි	මම පොත් ටික අරන් එඩ්ඩි ඔයල ඉwඅර කරල තියෙන්න ඔනී	Fail	Robustness validation – medium-length sentence using plural pronouns and multiple actions	·  Input Type/Domain: Daily language usage				
+							checks handling of complex structure and ensures grammatical consistency during translation.	·  Sentence/Grammar Focus: Plural form				
+								·  Input Length Type: M (31–299 characters)				
+								·   				
+Neg_Fun_0006	Mixed language with line break formatting preservation	M	"Mama report eka hadala
+      
+      email eken yawwa"	"මම report එක හදලා
+      
+      email එකෙන් යැව්වා"	"මම report එක හඩල
+        
+-   
+      email එකෙන් යwwඅ"	Fail	Formatting preservation – input includes line breaks and mixed English terms	·  Input Type/Domain: Formatting (spaces / line breaks / paragraph)				
+							verifies that text structure and spacing are preserved correctly during conversion without distortion.	·   Sentence/Grammar Focus: Simple sentence				
+								·   Input Length Type: M (31–299 characters)				
+								·   				
+Neg_Fun_0007	Mixed language negative past sentence	S	Mama phone eka aran awe nae	මම phone එක අරන් ආවේ නැ	මම phone එක අරන් awe නැ	Fail	Robustness validation – short mixed-language negative past sentence	·  Input Type/Domain: Mixed Singlish + English				
+							 evaluates handling of embedded English words and checks whether negation meaning is preserved during conversion.	·   Sentence/Grammar Focus: Negation (negative form)				
+								·  Input Length Type: S (≤30 characters)				
+								·   				
+Neg_Fun_0008	Polite request with distance unit	M	Api 15km vage yanna oni, bus ekak arrange karanna puluwanda	අපි 15km වගෙ යන්න ඔනි, bus එකක් arrange කරන්න පුලුවන්ද	අපි 15km වගෙ යන්න ඔනි, bus එකක් arrange කරන්න පුලුwඅන්ඩ	Fail	Robustness validation – input contains numbers , measurement units, and mixed Singlish + English terms within a polite request	·  Input Type/Domain: Punctuation / numbers				
+							verifies the system’s ability to process numeric values and mixed-language content without conversion errors.	·  Sentence/Grammar Focus: Interrogative (question)				
+								·  Input Length Type: M (31–299 characters)				
+								·   				
+Neg_Fun_0009	Robustness validation	M	adha raeeta kaalaa yanna inna, bath uyaNNam	අද රෑට කාලා යන්න ඉන්න, බත් උයන්නම්	අද රෑට කාලා යන්න ඉන්න, බත් උයණ්ණම්	Fail	Robustness validation – input includes inconsistent capitalization	·  Input Type/Domain: Typographical error handling				
+							minor spelling issues, and punctuation within a medium-length compound sentence	·  Sentence/Grammar Focus: Compound sentence				
+							 verifies the system’s tolerance to irregular typing patterns and its behavior when conversion accuracy degrades	·  Input Length Type: M (31–299 characters)				
+								·   				
+Neg_Fun_0010	Joined compound words	S	mata yanna bahe dhaen	මට යන්න බැහැ දැන්	මට යන්න බහෙ දැන්	Fail	spelling mistakes → typographical handling	·  Input Type/Domain: Typographical error handling				
+							Robustness validation – input contains spelling and phonetic typing mistakes	·  Sentence/Grammar Focus: Negation (negative form)				
+							verifies the system’s ability to handle typographical errors and evaluate how incorrect text affects translation accuracy.	·  Input Length Type: S (≤30 characters)				
+								·   				
+Neg_Fun_0011	Mixed spacing issues	S	apimixkaralagamuda	අපි mix කරලගමුද	අපිමිxකරලගමුඩ	Fail	Robustness validation – input contains missing spaces and mixed Singlish + English words	·  Input Type/Domain: Formatting (spaces / line breaks / paragraph)				
+							spacing issue → formatting category	·  Sentence/Grammar Focus: Interrogative (question)				
+							question form → interrogative	·  Input Length Type: S (≤30 characters)				
+								·   				
+Neg_Fun_0012	Robustness validation	S	KAKATHAKARANNA EPAA	කතාකරන්නා එපා	KAKATHAKARANNA EPAA	Fail	Robustness validation – input contains uppercase text and improper word segmentation	·  Input Type/Domain: Typographical error handling				
+							verifies the system’s ability to handle noisy or malformed Singlish input and correctly manage conversion failures.	·  Sentence/Grammar Focus: Imperative (command)				
+								·  Input Length Type: S (≤30 characters)				
+								·   				
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
