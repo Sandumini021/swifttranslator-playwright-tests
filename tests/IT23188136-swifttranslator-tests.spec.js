@@ -91,7 +91,7 @@ const CONFIG = {
       
       // Commands
       {
-        tcId: 'Pos_Fun_0010',
+        tcId: 'Pos_Fun_0008',
         name: 'Present + Command style',
         input: 'vaeda ikmanata karanna !',
         expected: 'වැඩ ඉක්මනට කරන්න !',
@@ -100,7 +100,7 @@ const CONFIG = {
         length: 'S'
       },
       {
-        tcId: 'Neg_Fun_0003',
+        tcId: 'Neg_Fun_0001',
         name: 'Casual imperative check request',
         input: 'ow oyaa haridha balannako ikmanata',
         expected: 'ඔව් ඔයා හරිද බලන්නකො ඉක්මනට',
@@ -111,7 +111,7 @@ const CONFIG = {
       
       // Greetings and Responses
       {
-        tcId: 'Neg_Fun_0004',
+        tcId: 'Neg_Fun_0002',
         name: 'Simple thank you response',
         input: 'Bohoma istuti oyage help ekata',
         expected: 'බොහෝම ඉස්තුති ඔයාගේ හෙල්ප් එකට',
@@ -120,7 +120,7 @@ const CONFIG = {
         length: 'S'
       },
       {
-        tcId: 'Neg_Fun_0005',
+        tcId: 'Neg_Fun_0003',
         name: 'Real time output update while typing',
         input: 'Mama gedara enawDa Oyaa enawada eNawda. ',
         expected: 'මම ගෙදර යනවා ඔයා\n එනවාද',
@@ -131,7 +131,7 @@ const CONFIG = {
       
       // Tense Variations
       {
-        tcId: 'Pos_Fun_0014',
+        tcId: 'Pos_Fun_0009',
         name: 'Future tense action',
         input: 'heta assignment eka email eken sabmit karanna yannee.',
         expected: 'හෙට assignment එක email එකෙන් සබ්මිට් කරන්න යන්නේ.',
@@ -140,7 +140,7 @@ const CONFIG = {
         length: 'M'
       },
       {
-        tcId: 'Neg_Fun_0006',
+        tcId: 'Neg_Fun_0004',
         name: 'Past tense action',
         input: 'mama iiyee ofis ekata yadhdhi wetunaa !!!!',
         expected: 'මම ඊයේ ඔෆිස් එකට යද්දි වැටුනා !!!!',
@@ -151,7 +151,7 @@ const CONFIG = {
       
       // Plural and Pronouns
       {
-        tcId: 'Neg_Fun_0009',
+        tcId: 'Neg_Fun_0005',
         name: 'Plural pronoun usage',
         input: 'mama poth tika aran eddi oyala iwara karala thiyenna onii',
         expected: 'මම පොත් ටික අරන් එද්දි ඔයාලා ඉවර කරලා තියෙන්න ඕනි',
@@ -160,7 +160,7 @@ const CONFIG = {
         length: 'M'
       },
       {
-        tcId: 'Pos_Fun_0019',
+        tcId: 'Pos_Fun_0010',
         name: 'Plural pronoun usage',
         input: 'saththu tika balan aethi gedhara yanna',
         expected: 'සත්තු ටික බලන් ඇති ගෙදර යන්න',
@@ -171,7 +171,7 @@ const CONFIG = {
       
       // Word Combinations
       {
-        tcId: 'Pos_Fun_0020',
+        tcId: 'Pos_Fun_0011',
         name: 'Short phrase pattern sentence',
         input: 'Eka hariyata balalaa kiyanna',
         expected: 'එක හරියට බලලා කියන්න',
@@ -180,7 +180,7 @@ const CONFIG = {
         length: 'S'
       },
       {
-        tcId: 'Pos_Fun_0021',
+        tcId: 'Pos_Fun_0012',
         name: 'Short phrase pattern sentence',
         input: 'Api tika tika igena gannawa ee hindha thama hariyata dhanne nae',
         expected: 'අපි ටික ටික ඉගෙන ගන්නව ඒ හින්ද තම හරියට දන්නෙ නැ',
@@ -190,7 +190,7 @@ const CONFIG = {
       },
       // Mixed Language
       {
-        tcId: 'Neg_Fun_0010',
+        tcId: 'Neg_Fun_0006',
         name: 'Mixed language with line break formatting preservation',
         input: `Mama report eka hadala
       
@@ -204,7 +204,7 @@ const CONFIG = {
       },
       
       {
-        tcId: 'Neg_Fun_0011',
+        tcId: 'Neg_Fun_0007',
         name: 'Mixed language negative past sentence',
         input: 'Mama phone eka aran awe nae',
         expected: 'මම phone එක අරන් ආවේ නැ',
@@ -215,7 +215,7 @@ const CONFIG = {
          
       // Numbers , dates and Formats
       {
-        tcId: 'Pos_Fun_0024',
+        tcId: 'Pos_Fun_0013',
         name: 'Polite request with date format',
         input: 'Report eka 12/07/2026 ta kalin submit karanna puluvandha ?',
         expected: 'Report එක 12/07/2026 ට කලින් submit කරන්න පුලුවන්ද ?',
@@ -225,7 +225,7 @@ const CONFIG = {
       },
 
       {
-        tcId: 'Neg_Fun_0013',
+        tcId: 'Neg_Fun_0008',
         name: 'Polite request with distance unit',
         input: 'Api 15km vage yanna oni, bus ekak arrange karanna puluwanda',
         expected: 'අපි 15km වගෙ යන්න ඔනි, bus එකක් arrange කරන්න පුලුවන්ද',
@@ -235,7 +235,7 @@ const CONFIG = {
       },
     
       {
-        tcId: 'Neg_Fun_0014',
+        tcId: 'Neg_Fun_0009',
         name: 'Robustness validation',
         input: 'adha raeeta kaalaa yanna inna, bath uyaNNam',
         expected: 'අද රෑට කාලා යන්න ඉන්න, බත් උයන්නම්',
@@ -244,7 +244,7 @@ const CONFIG = {
         length: 'S'
       },
       {
-        tcId: 'Neg_Fun_0015',
+        tcId: 'Neg_Fun_0010',
         name: 'Joined compound words',
         input: 'mata yanna bahe dhaen',
         expected: 'මට යන්න බැහැ දැන්',
@@ -253,7 +253,7 @@ const CONFIG = {
         length: 'S'
       },
       {
-        tcId: 'Neg_Fun_0016',
+        tcId: 'Neg_Fun_0011',
         name: 'Mixed spacing issues',
         input: 'apimixkaralagamuda',
         expected: 'අපි mix කරලගමුද',
@@ -262,7 +262,7 @@ const CONFIG = {
         length: 'S'
       },
       {
-        tcId: 'Neg_Fun_0017',
+        tcId: 'Neg_Fun_0012',
         name: 'Robustness validation',
         input: 'KAKATHAKARANNA EPAA',
         expected: 'කතාකරන්නා එපා',
@@ -271,7 +271,7 @@ const CONFIG = {
         length: 'S'
       },
       {
-        tcId: 'Pos_Fun_0030',
+        tcId: 'Pos_Fun_0014',
         name: 'Informal slang phrase',
         input: 'hari ban, ennam',
         expected: 'හරි බන්, එන්නම්',
@@ -280,7 +280,7 @@ const CONFIG = {
         length: 'S'
       },
       {
-        tcId: 'Pos_Fun_0031',
+        tcId: 'Pos_Fun_0015',
         name: 'Informal slang phrase',
         input: 'mata salli naee ban passee dhennam',
         expected: 'මට සල්ලි නෑ බන් පස්සේ දෙන්නම්',
@@ -289,7 +289,7 @@ const CONFIG = {
         length: 'M'
       },
       {
-        tcId: 'Pos_Fun_0032',
+        tcId: 'Pos_Fun_0016',
         name: 'Colloquial expression',
         input: 'ehema karanna epaa harita balalaa karanna',
         expected: 'එහෙම කරන්න එපා හරිට බලලා කරන්න',
@@ -298,7 +298,7 @@ const CONFIG = {
         length: 'M'
       },
       {
-        tcId: 'Pos_Fun_0033',
+        tcId: 'Pos_Fun_0017',
         name: 'Colloquial expression',
         input: 'api tikak kalpanaa karalaa passee thiiraNayak gannamu',
         expected: 'අපි ටිකක් කල්පනා කරලා පස්සේ තීරණයක් ගන්නමු',
@@ -307,7 +307,7 @@ const CONFIG = {
         length: 'M'
       },
       {
-        tcId: 'Pos_Fun_0034',
+        tcId: 'Pos_Fun_0018',
         name: 'Colloquial expression',
         input: 'tikak innakoo',
         expected: 'ටිකක් ඉන්නකෝ',
@@ -316,7 +316,7 @@ const CONFIG = {
         length: 'M'
       },
       {
-        tcId: 'Pos_Fun_0035',
+        tcId: 'Pos_Fun_0019',
         name: 'Colloquial past tense expression',
         input: 'api tikak kalpanaa karaa',
         expected: 'අපි ටිකක් කල්පනා කරා',
@@ -325,7 +325,7 @@ const CONFIG = {
         length: 'S'
       },
       {
-        tcId: 'Pos_Fun_0036',
+        tcId: 'Pos_Fun_0020',
         name: 'Abbreviation in sentence',
         input: 'Info ekak evanna',
         expected: 'Info එකක් එවන්න',
@@ -334,7 +334,7 @@ const CONFIG = {
         length: 'S'
       },
       {
-        tcId: 'Pos_Fun_0037',
+        tcId: 'Pos_Fun_0021',
         name: 'Abbreviation in sentence with time',
         input: '2 hrs idhalaa enna',
         expected: '2 hrs ඉදලා එන්න',
@@ -343,7 +343,7 @@ const CONFIG = {
         length: 'S'
       },
       {
-        tcId: 'Pos_Fun_0038',
+        tcId: 'Pos_Fun_0022',
         name: 'Complex slang statement',
         input: 'machQQ mama leet unaa ban traefik ekak thibba nisaa',
         expected: 'මචං මම ලේට් උනා බන් ට්‍රැෆික් එකක් තිබ්බ නිසා',
@@ -352,16 +352,16 @@ const CONFIG = {
         length: 'M'
       },
       {
-        tcId: 'Pos_Fun_0039',
+        tcId: 'Pos_Fun_0023',
         name: 'Complex slang statement',
         input: '1 msg ekak dhenna',
-        expected: '1 msg එකක් දෙන්න',
+        expected: '1 ම්ස්ග් එකක් දෙන්න',
         category: 'Slang / informal language',
         grammar: 'Complex sentence',
         length: 'S'
       },
       {
-        tcId: 'Pos_Fun_0040',
+        tcId: 'Pos_Fun_0024',
         name: 'Complex slang statement',
         input: 'kamak naee ithin',
         expected: 'කමක් නෑ ඉතින්',
@@ -370,7 +370,7 @@ const CONFIG = {
         length: 'S'
       },
       {
-        tcId: 'Pos_Fun_0041',
+        tcId: 'Pos_Fun_0025',
         name: 'Complex slang statement',
         input: 'anee mandhaa ban meeka karanna baee',
         expected: 'අනේ මන්දා බන් මේක කරන්න බෑ',
@@ -379,7 +379,7 @@ const CONFIG = {
         length: 'S'
       },
       {
-        tcId: 'Pos_Fun_0042',
+        tcId: 'Pos_Fun_0026',
         name: 'Simple slang statement',
         input: 'adoo ban !!!!!!',
         expected: 'අඩෝ බන් !!!!!!',
@@ -388,7 +388,7 @@ const CONFIG = {
         length: 'S'
       },
       {
-        tcId: 'Pos_Fun_0043',
+        tcId: 'Pos_Fun_0027',
         name: 'Compound informal slang statement',
         input: 'hari ban poddak idapan, mama dhavasama bisi unaa',
         expected: 'හරි බන් පොඩ්ඩක් ඉඩපන්, මම දවසම බිසි උනා',
@@ -397,7 +397,7 @@ const CONFIG = {
         length: 'M'
       },
       {
-        tcId: 'Pos_Fun_0044',
+        tcId: 'Pos_Fun_0028',
         name: 'Short phrase pattern sentence',
         input: 'api yamu ban passee balamu mokadha vennee kiyalaa',
         expected: 'අපි යමු බන් පස්සේ බලමු මොකද වෙන්නේ කියලා',
@@ -406,7 +406,7 @@ const CONFIG = {
         length: 'M'
       },
       {
-        tcId: 'Pos_Fun_0045',
+        tcId: 'Pos_Fun_0029',
         name: 'Short phrase pattern sentence',
         input: 'machn mama leet unaa ban traefik ekak thibba nisaa',
         expected: 'මච්න් මම ලේට් උනා බන් ට්‍රැෆික් එකක් තිබ්බ නිසා',
